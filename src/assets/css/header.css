@@ -1,0 +1,35 @@
+
+.header {
+  margin: 20px;
+  height: 100px;
+  width: 95%;
+  position: fixed;
+  background-color: transparent;
+  display: grid;
+}
+
+.header img {
+  align-self: center;
+  cursor: pointer;
+  left: 200px;
+  position: absolute;
+  width: 300px;
+}
+
+.header nav {
+  align-self: center;
+  position: absolute;
+  right: 250px;
+}
+
+.header nav a {
+  color: #4D4D4D;
+  font-size: 18px;
+  font-weight: 300;
+  padding-left: 70px;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  color: #7e7e7e
+}
