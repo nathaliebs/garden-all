@@ -1,9 +1,9 @@
 .footer {
   background-color: #e7e7e7;
   bottom: 0;
-  position: fixed;
   height: 300px;
   width: 100%;
+  position: relative;
 }
 
 .footer img {

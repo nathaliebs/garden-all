@@ -7,8 +7,8 @@
   margin-bottom: 10px !important;
 }
 
-.form {
-  margin-top: 100px;
+.login-form {
+  margin-top: 150px;
   align-items: center !important;
   display: flex;
   flex-direction: column;
