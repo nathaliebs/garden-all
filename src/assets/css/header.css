@@ -2,8 +2,8 @@
 .header {
   margin: 20px;
   height: 100px;
-  width: 95%;
-  position: fixed;
+  width: 100%;
+  position: relative;
   background-color: transparent;
   display: grid;
 }
