@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import api from "../../services/api";
-import "../../assets/css/StyledModal.css";
 import ModalInsertProducts from "../components/ModalInsertProducts";
 
 const Products = () => {
