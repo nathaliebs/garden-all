@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 import PublicHeader from '../views/components/PublicHeader'
+import Footer from '../views/components/Footer'
 import Home from '../views/pages/Home'
 import Products from '../views/pages/Products'
 import Contact from '../views/pages/Contact'
@@ -18,6 +19,7 @@ const PublicAreaRouter = () => {
         <Route exact path="/login-sistema" component={ AdminLogin } />
         <Route path="*" render={() => <Redirect push to="/home" /> } />
       </Switch>
+      <Footer />
     </>
   )
 }
