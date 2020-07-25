@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TextField from '@material-ui/core/TextField';
 import { Grid, Typography, Button } from '@material-ui/core';
 
 import '../../assets/css/admin-login.css'
 
 const AdminLogin = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+  }, [])
+
+
 	return (
 		<div className="login-form">
 			<Typography variant="h6" color="primary" className="loginTitle">login para administração</Typography>

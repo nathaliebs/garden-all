@@ -1,5 +1,5 @@
  
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../assets/css/page-products.css'
 import { Grid, Typography, Divider } from '@material-ui/core'
 import image1 from '../../products-pictures/1-quiabo.png'
@@ -11,6 +11,11 @@ import Footer from '../components/Footer'
 
 
 const Products = () => {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [])
+
+
 	const products = [
 		{
 			name: 'Quiabo',
@@ -74,6 +79,7 @@ const Products = () => {
 			image: image13
 		}
 	]
+
 
 	return (
 		<>

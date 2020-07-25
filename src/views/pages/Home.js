@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Grid, Typography, Divider } from '@material-ui/core'
 
 import '../../assets/css/home.css'
@@ -49,6 +49,10 @@ const Home = () => {
 			saleValue: 3465
 		}
 	]
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [])
 
 	return (
 		<>
