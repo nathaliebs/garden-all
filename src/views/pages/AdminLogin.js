@@ -2,11 +2,11 @@ import React from 'react'
 import TextField from '@material-ui/core/TextField';
 import { Grid, Typography, Button } from '@material-ui/core';
 
-import '../../assets/css/adminLogin.css'
+import '../../assets/css/admin-login.css'
 
 const AdminLogin = () => {
 	return (
-		<div className="form">
+		<div className="login-form">
 			<Typography variant="h6" color="primary" className="loginTitle">login para administração</Typography>
 				<TextField 
 					className="textfield"
@@ -22,7 +22,7 @@ const AdminLogin = () => {
 					color="secondary"
 					required
 				/>
-			<Button variant="contained" color="primary">login</Button>
+			<Button variant="contained" color="primary">acessar</Button>
 		</div>
 	)
 }

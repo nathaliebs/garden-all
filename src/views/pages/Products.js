@@ -7,6 +7,7 @@ import image2 from '../../products-pictures/2-acacia.png'
 import image3 from '../../products-pictures/3-bengal-quince.png'
 import image13 from '../../products-pictures/13-graviola.png'
 import ProductCard from '../components/ProductCard'
+import Footer from '../components/Footer'
 
 
 const Products = () => {
@@ -83,6 +84,7 @@ const Products = () => {
 					</Grid>
 				))}
 			</Grid>
+			<Footer />
 		</>
 	)
 }
