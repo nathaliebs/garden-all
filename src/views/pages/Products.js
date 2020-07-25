@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 
 const Products = () => {
 
-
   const [load, setLoad] = useState(false);
   const [products, setProducts] = useState([]);
 

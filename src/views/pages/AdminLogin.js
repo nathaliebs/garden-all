@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
 import { Typography, Button } from "@material-ui/core";
 
@@ -8,10 +8,13 @@ import ModalInsertProducts from "../components/ModalInsertProducts";
 import "../../assets/css/admin-login.css";
 
 const AdminLogin = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [openModal, setOpenModal] = useState(false);
   const handleCreateProduct = async (object) => {
-	await api.createProducts(object);
-	setOpenModal(false);
+    await api.createProducts(object);
+    setOpenModal(false);
   };
 
   return (

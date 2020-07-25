@@ -7,7 +7,7 @@ import FormatMoney from '../../helper/FormatMoney'
 
 const ProductCard = ({ product, saleValue }) => (
   <div className="product-card">
-    <img src={product.image} alt="product image" />
+    <img src={product.image} alt="Produto" />
     <div>
       <Typography variant="h5">{product.name}</Typography>
       <Typography variant="body1">{product.description}</Typography>
