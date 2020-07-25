@@ -18,6 +18,7 @@ const AdminLogin = () => {
 				label="e-mail" 
 				variant="outlined"
 				color="secondary"
+				type="email"
 				required
 			/>
 			<TextField 
@@ -25,6 +26,7 @@ const AdminLogin = () => {
 				label="senha" 
 				variant="outlined"
 				color="secondary"
+				type="password"
 				required
 			/>
 			<Button variant="contained" color="primary">acessar</Button>
