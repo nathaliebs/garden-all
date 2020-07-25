@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Garden All :herb:
 
 Esse projeto consiste em um simples e-commerce para uma loja de plantas chamada Garden All. 
