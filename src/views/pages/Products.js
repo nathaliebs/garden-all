@@ -1,25 +1,26 @@
 import React, { useEffect, useState } from "react";
 import api from "../../services/api";
+import "../../assets/css/StyledModal.css";
+import ModalInsertProducts from "../components/ModalInsertProducts";
 
 const Products = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   const [load, setLoad] = useState(false);
   const [products, setProducts] = useState([]);
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
-  const [price, setPrice] = useState(0);
-  const [image, setImage] = useState("");
 
   const handleGetProductList = async () => {
     const response = await api.listProducts();
 
-	setLoad(true);
+    setLoad(true);
     setProducts(response);
   };
 
-  const handleCreateApp = async () => {
-    const response = await api.createProducts();
-
-    setProducts(products.push(response));
+  const handleCreateProduct = async (object) => {
+    const response = await api.createProducts(object);
+    const ProductsList = products.push(response)
+    setProducts(ProductsList);
+    console.log(ProductsList);
   };
 
   useEffect(() => {
@@ -31,6 +32,11 @@ const Products = () => {
   return (
     <>
       <p>PRODUTOS</p>
+      <ModalInsertProducts
+        open={openModal}
+        setOpen={setOpenModal}
+        handleCreateProduct={handleCreateProduct}
+      />
     </>
   );
 };
