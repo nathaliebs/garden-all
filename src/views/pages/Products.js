@@ -1,7 +1,7 @@
  
 import React from 'react'
 import '../../assets/css/page-products.css'
-import { Grid } from '@material-ui/core'
+import { Grid, Typography, Divider } from '@material-ui/core'
 import image1 from '../../products-pictures/1-quiabo.png'
 import image2 from '../../products-pictures/2-acacia.png'
 import image3 from '../../products-pictures/3-bengal-quince.png'
@@ -77,6 +77,8 @@ const Products = () => {
 
 	return (
 		<>
+			<Typography variant="h6" color="primary" className="pageTitle">produtos</Typography>
+			<Divider variant="inset" />
     	<Grid container spacing={4} justify="center" className="products-container">
 				{products.map((product) => (
 					<Grid item xs={6}>
