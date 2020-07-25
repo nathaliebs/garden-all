@@ -9,8 +9,8 @@ const ProductCard = ({ product, saleValue }) => (
   <div className="product-card">
     <img src={product.image} alt="Produto" />
     <div>
-      <Typography variant="h5">{product.name}</Typography>
-      <Typography variant="body1">{product.description}</Typography>
+      <Typography variant="h5" className="text-capitalize">{product.name}</Typography>
+      <Typography variant="body1">{product.descricao}</Typography>
       <div className="money">
         {saleValue && (
           <Typography variant="subtitle" className="last-price">{FormatMoney(saleValue)}</Typography>

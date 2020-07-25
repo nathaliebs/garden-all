@@ -13,37 +13,37 @@ const Home = () => {
 	const products = [
 		{
 			name: 'Quiabo',
-			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+			descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
 			price: 2399,
 			image: image1,
 			saleValue: 3400
 		}, {
 			name: 'Acacia',
-			description: 'ssentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently',
+			descricao: 'ssentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently',
 			price: 3000,
 			image: image2,
 			saleValue: 3465
 		}, {
 			name: 'Bengal Quince',
-			description: 'iou g dgo dsagasdgads g',
+			descricao: 'iou g dgo dsagasdgads g',
 			price: 6790,
 			image: image3,
 			saleValue: 8476
 		}, {
 			name: 'Graviola',
-			description: 'iou g dgo dsagasdgads g',
+			descricao: 'iou g dgo dsagasdgads g',
 			price: 1750,
 			image: image13,
 			saleValue: 2330
 		}, {
 			name: 'Quiabo',
-			description: 'den-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going thro',
+			descricao: 'den-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going thro',
 			price: 1500,
 			image: image1,
 			saleValue: 1980
 		}, {
 			name: 'Acacia',
-			description: 'iou g dgo dsagasdgads g',
+			descricao: 'iou g dgo dsagasdgads g',
 			price: 3000,
 			image: image2,
 			saleValue: 3465
