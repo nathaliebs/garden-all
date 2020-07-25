@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
+import './assets/css/reset.css'
 import './assets/css/global.css'
 import MainRouter from './routes/MainRouter'
 
