@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
 	return (
 		<>
-    	<p>HOME</p>
+    	<p>LOGIN NO SISTEMA</p>
 		</>
 	)
 }

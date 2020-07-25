@@ -1,18 +1,16 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
-import Header from './views/components/Header'
-import Footer from './views/components/Footer'
+import MainRouter from './routes/MainRouter'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-          <Header />
-          <Footer />
+        <MainRouter />
       </BrowserRouter>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
