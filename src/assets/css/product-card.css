@@ -1,0 +1,33 @@
+.product-card {
+  transition: 0.2s;
+  display: flex;
+  padding: 20px;
+}
+
+.product-card:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.product-card div {
+  position: relative;
+  width: 100%;
+}
+
+.product-card .money {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.product-card .money .last-price {
+  text-decoration-line: line-through;
+  color: #a6a6a6;
+}
