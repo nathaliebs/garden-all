@@ -1,46 +1,47 @@
 import React, { useState, useEffect } from 'react'
 import { Grid, Typography, Divider, IconButton } from '@material-ui/core'
-import AddIcon from '@material-ui/icons/Add';
+import AddIcon from '@material-ui/icons/Add'
 
-import api from "../../services/api";
+import api from "../../services/api"
 import '../../assets/css/home.css'
 import ProductCard from '../components/ProductCard'
 import ModalInsertProducts from '../components/ModalInsertProducts'
 
 
 const Home = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [load, setLoad] = useState(false);
-  const [products, setProducts] = useState([]);
+  const [openModal, setOpenModal] = useState(false)
+  const [load, setLoad] = useState(false)
+  const [products, setProducts] = useState([])
 
 
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		window.scrollTo(0, 0)
   }, [])
 
 
   const handleGetProductList = async () => {
-    const response = await api.listProducts();
+    const response = await api.listProducts()
 
-    setLoad(true);
-    setProducts(response);
-  };
+    setLoad(true)
+    setProducts(response)
+  }
 
   useEffect(() => {
     if (!load) {
-      handleGetProductList();
+      handleGetProductList()
     }
-  });
+  })
 
   const handleCreateProduct = async (object) => {
-    await api.createProducts(object);
-    setOpenModal(false);
-  };
+    await api.createProducts(object)
+    setOpenModal(false)
+    handleGetProductList()
+  }
 
 
 	return (
 		<>
-      <div style={{position: 'flex', alignItems: 'center'}}>
+      <div style={{display: 'flex', alignItems: 'center'}}>
         <Typography variant="h6" color="primary" className="pageTitle">Todos os produtos</Typography>
         <IconButton aria-label="delete" onClick={() => setOpenModal(true)}>
           <AddIcon fontSize="large" />
