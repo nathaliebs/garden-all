@@ -1,10 +1,12 @@
  
 import React from 'react'
 
+import { Typography } from '@material-ui/core'
+
 const Home = () => {
 	return (
 		<>
-    	<p>LOGIN NO SISTEMA</p>
+    	<Typography variant="body1">Login no Sistema</Typography>
 		</>
 	)
 }
