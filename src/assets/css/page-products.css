@@ -1,0 +1,15 @@
+.products-container {
+  padding: 20px 300px
+}
+
+@media (max-width: 1700px) {
+  .products-container {
+    padding: 20px 100px
+  }
+}
+
+@media (max-width: 1400px) {
+  .products-container {
+    padding: 20px 50px
+  }
+}

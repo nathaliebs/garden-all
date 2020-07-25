@@ -1,0 +1,20 @@
+.loginTitle {
+  text-align: center !important;
+  margin-bottom: 15px !important;
+}
+
+.textfield {
+  margin-bottom: 10px !important;
+}
+
+.login-form {
+  margin-top: 150px;
+  align-items: center !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiButton-containedPrimary {
+  color: white !important;
+}
+

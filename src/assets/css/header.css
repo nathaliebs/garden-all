@@ -4,7 +4,7 @@
   height: 100px;
   width: 100%;
   position: relative;
-  background-color: transparent;
+  background-color: #FFFFFF;
   display: grid;
 }
 
@@ -20,6 +20,15 @@
   align-self: center;
   position: absolute;
   right: 250px;
+}
+
+@media (max-width: 1700px) {
+  .header img {
+    left: 50px;
+  }
+  .header nav {
+    right: 140px;
+  }
 }
 
 .header nav a {

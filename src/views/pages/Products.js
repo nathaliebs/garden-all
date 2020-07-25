@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
+
 import api from "../../services/api";
-import ModalInsertProducts from "../components/ModalInsertProducts";
+import "../../assets/css/page-products.css";
+import { Grid, Typography, Divider } from "@material-ui/core";
+
+import ProductCard from "../components/ProductCard";
+import Footer from "../components/Footer";
 
 const Products = () => {
-  const [openModal, setOpenModal] = useState(false);
+
 
   const [load, setLoad] = useState(false);
   const [products, setProducts] = useState([]);
@@ -15,13 +20,6 @@ const Products = () => {
     setProducts(response);
   };
 
-  const handleCreateProduct = async (object) => {
-    const response = await api.createProducts(object);
-    const ProductsList = products.push(response)
-    setProducts(ProductsList);
-    console.log(ProductsList);
-  };
-
   useEffect(() => {
     if (!load) {
       handleGetProductList();
@@ -30,12 +28,23 @@ const Products = () => {
 
   return (
     <>
-      <p>PRODUTOS</p>
-      <ModalInsertProducts
-        open={openModal}
-        setOpen={setOpenModal}
-        handleCreateProduct={handleCreateProduct}
-      />
+      <Typography variant="h6" color="primary" className="pageTitle">
+        produtos
+      </Typography>
+      <Divider variant="inset" />
+      <Grid
+        container
+        spacing={4}
+        justify="center"
+        className="products-container"
+      >
+        {products.map((product) => (
+          <Grid item xs={6}>
+            <ProductCard product={product} />
+          </Grid>
+        ))}
+      </Grid>
+      <Footer />
     </>
   );
 };
